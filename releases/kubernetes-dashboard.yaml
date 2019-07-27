@@ -1,0 +1,13 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: kubernetes-dashboard
+  namespace: demo
+spec:
+  releaseName: kubernetes-dashboard
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: kubernetes-dashboard
+    version: 1.8.0
+    
